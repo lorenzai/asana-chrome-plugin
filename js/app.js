@@ -24,6 +24,12 @@ asanaModule.config(function($routeProvider, $locationProvider) {
             controllerAs: "settingsCtrl",
             activeTab   : "settings"
         })
+        .when("/templates", {
+            templateUrl : "pages/templates.html",
+            controller  : "templateTaskController",
+            controllerAs: "templateTaskCtrl",
+            activeTab   : "template"
+        })
         .when("popup.html", {
             redirectTo  : "/create"
         })
